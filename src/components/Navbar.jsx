@@ -1,4 +1,4 @@
-import { Menu, Sword, Users } from "lucide-react";
+import { Menu, Sword, LogIn, UserPlus } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -18,9 +18,13 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <button className="hidden sm:inline-flex items-center gap-2 px-3 py-2 rounded-md text-slate-300 hover:text-white hover:bg-white/5 border border-white/10 transition">
+            <LogIn className="h-4 w-4" />
+            Log in
+          </button>
           <button className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-slate-900 font-medium hover:bg-amber-100 transition shadow">
-            <Users className="h-4 w-4" />
-            Create a community
+            <UserPlus className="h-4 w-4" />
+            Create account
           </button>
           <button className="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-md border border-white/10 text-white">
             <Menu className="h-5 w-5" />
